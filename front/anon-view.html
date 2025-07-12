@@ -1,0 +1,33 @@
+
+    <div id="article-container">
+        <div id="article-title">The Amazing Headline</div>
+        <div id="article-body">
+            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vestibulum consequat, nisi eu hendrerit laoreet, erat lorem commodo purus, nec interdum lorem mauris id nisi. Cras ac felis sit amet lacus tincidunt fermentum. Suspendisse potenti.</p>
+        </div>
+        
+        <div id="article-image">
+            <img id="actual-img" src="placeholder.jpg" alt="Article Image">
+        </div>
+          <!-- Article Metadata -->
+        <div id="article-meta" class="metadata">
+            <p id="categories"></p>
+            <p id="date-created"></p>
+            <p id="last-edit"></p>
+        </div>
+        <div id="related-articles">
+            <div onclick="loadTeaser(1)" class="teaser">
+                <h3 id="t1-title">Teaser Title 1</h3>
+                <p id="t1-text">This is a teaser for another story. Catch the excitement here!</p>
+            </div>
+            <div onclick="loadTeaser(2)" class="teaser">
+                <h3 id="t2-title">Teaser Title 2</h3>
+                <p id="t2-text">Another teaser for a different story. Don’t miss it!</p>
+            </div>
+        </div>
+        <div id="advertisement" onclick="createAdEvent()">
+            <p id="ad-content">Advertisement Space</p>
+        </div>
+        <div id="author-controls">
+            <button id="next-article-button" onclick="loadNextArticle()">Next Article</button>
+        </div>
+    </div>

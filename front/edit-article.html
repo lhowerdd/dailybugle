@@ -1,0 +1,36 @@
+<div class="form-wrapper">
+    <h1>Create an Article</h1>
+    <form id="create-article-form" onsubmit="saveArticle(event)" enctype="multipart/form-data">
+        <div>
+            <label for="article-title">Title:</label>o
+            <input type="text" id="article-title-edit" name="title" placeholder="Enter the article title" required>
+        </div>
+        <div>
+            <label for="article-body">Main Body:</label>
+            <textarea id="article-body-edit" name="body" rows="10" placeholder="Write the main content of your article" required></textarea>
+        </div>
+        <div>
+            <label for="article-teaser">Teaser:</label>
+            <input type="text" id="article-teaser-edit" name="teaser" placeholder="Write a short teaser for your article" required>
+        </div>
+        <div>
+            <label for="article-categories">Categories:</label>
+            <select id="article-categories-edit" name="categories" multiple>
+                <option value="science">Science</option>
+                <option value="technology">Technology</option>
+                <option value="fiction">Fiction</option>
+                <option value="education">Education</option>
+                <option value="health">Health</option>
+                <option value="sports">Sports</option>
+                <option value="pop-culture">Pop Culture</option>
+                <option value="politics">Politics</option>
+            </select>
+        </div>
+        <div>
+            <label for="article-image">Upload an Image:</label>
+            <input type="file" id="article-image-edit" name="image" accept="image/*" required>
+        </div>
+        <button type="submit">Submit Article</button>
+    </form>
+    <button id="return" onclick="loadPage('author')">return to home</button>
+</div>

@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html>
+    </head>
+        <script src="login-controller.js" defer></script>
+        <script src="article-controller.js"></script>
+        <link rel="stylesheet" href="sign-in-styling.css"></link>
+        <link rel="stylesheet" href="main-page-styling.css"></link>
+    </head>
+
+   
+    <body onLoad="checkCookie()">
+
+        <div id="title-div">
+            <h1 id="title">The Daily Bugle</h1>
+        </div>
+       
+        
+        <div id="main-page">
+            <div id="article-image"></div>
+        </div>
+
+       
+        <div class="search-area">
+
+        </div>
+
+
+
+        <div class="top-right-buttons">
+            <text id="display-username"></text>
+            <div id="hide-sign-out-button">
+                <button id="sign-out-btn" onclick="signOut()">Sign Out</button>
+            </div>
+            <div id="hide-top-right-buttons">
+                <button id="open-sign-in-button">Sign In</button>
+                <button id="open-create-account-button">Create Account</button>
+            </div>
+        </div>
+
+        <!-- create account popup -->
+        <div id="create-account-modal" class="modal">
+            <div class="modal-content">
+                <span class="close">&times;</span>
+                <form>
+                    <label for="username">Username:</label>
+                    <input type="text" id="create-username"></input>
+                    <label for="password">Password:</label>
+                    <input type="text" id="create-password"></input>
+                    <label for="confirm-paassword">Confirm Password:</label>
+                    <input type="text" id="confirm-password"></input>
+                    <button type="button" onClick="createAccount()"> Create Account </button>
+                    <div id="create-account-error">
+                        <text id="create-error-message"></text>
+                    </div>
+                </form>
+            </div>
+        </div>
+        <!-- sign in popup -->
+        <div id="sign-in-modal" class="modal">
+            <div class="modal-content">
+                <span class="close">&times;</span>
+                <form>
+                    <label for="login-username">Username:</label>
+                    <input type="text" id="login-username"></input>
+                    <label for="login-password">Password:</label>
+                    <input type="text" id="login-password"></input>
+                    <button type="button" onClick="signIn()"> Sign In </button>
+                    <div id="login-error">
+                        <text id="login-error-message"></text>
+                    </div>
+                </form>
+            </div>
+        </div>
+
+    </body>
+ 
+   
+  
+</html>
+
+

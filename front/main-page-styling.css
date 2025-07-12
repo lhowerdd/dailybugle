@@ -1,0 +1,235 @@
+/* Apply styles only to the content inside .form-wrapper */
+.form-wrapper {
+    max-width: 600px;
+    margin: 20px auto;
+    font-family: Arial, sans-serif;
+}
+
+/* Styles for labels */
+.form-wrapper label {
+    font-weight: bold;
+    margin-bottom: 5px;
+}
+
+/* Styles for inputs, textareas, and selects */
+.form-wrapper input,
+.form-wrapper textarea,
+.form-wrapper select {
+    width: 100%;
+    padding: 10px;
+    font-size: 16px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    margin-bottom: 20px;
+    box-sizing: border-box;
+}
+
+/* Styles for the submit button */
+.form-wrapper button {
+    padding: 10px 15px;
+    background-color: #28a745;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    font-size: 16px;
+    cursor: pointer;
+}
+
+.form-wrapper button:hover {
+    background-color: #218838;
+}
+
+
+.edit-button {
+    padding: 10px 15px;
+    background-color: #28a745;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    font-size: 16px;
+    cursor: pointer;
+}
+
+
+/* General Reset */
+body {
+    margin: 0;
+    font-family: Arial, sans-serif;
+    line-height: 1.6;
+}
+
+/* Article Container */
+#article-container {
+    width: 80%;
+    margin: 20px auto;
+    padding: 10px;
+    background-color: #f9f9f9;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    border-radius: 8px;
+}
+
+/* Title */
+#article-title {
+    font-size: 2.5rem;
+    font-weight: bold;
+    text-align: center;
+    margin-bottom: 20px;
+    color: #333;
+}
+
+/* Article Body */
+#article-body {
+    width: 60%;
+    margin: 0 auto 30px auto;
+    color: #555;
+    font-size: 1rem;
+    text-align: justify;
+}
+
+/* Meta Information */
+#article-meta {
+    width: 60%;
+    margin: 0 auto 20px auto;
+    font-size: 0.6rem;
+    color: #666;
+    text-align: left;
+}
+
+/* Image Section */
+#article-image {
+    width: 40%;
+    height: 200px; /* Smaller fixed height for image area */
+    overflow: hidden;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 20px auto;
+    background-color: #ddd;
+    border-radius: 8px;
+}
+
+#actual-img {
+    max-width: 40%;
+    max-height: 100%;
+    object-fit: contain;
+}
+
+/* Related Articles */
+#related-articles {
+    display: flex;
+    justify-content: space-between;
+    gap: 10px;
+    margin-top: 20px;
+}
+
+.teaser {
+    flex: 1;
+    padding: 10px;
+    background-color: #fff;
+    border: 1px solid #ccc;
+    border-radius: 8px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    text-align: center;
+}
+
+.teaser h3 {
+    font-size: 1.2rem;
+    margin-bottom: 10px;
+    color: #333;
+}
+
+.teaser p {
+    font-size: 0.9rem;
+    color: #666;
+}
+
+/* Advertisement Section */
+#advertisement {
+    width: 100%;
+    height: 150px; /* Reserved space for ad */
+    margin-top: 30px;
+    background-color: #eee;
+    border: 1px dashed #ccc;
+    text-align: center;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 1rem;
+    color: #777;
+}
+
+
+/* --- Reader View --- */
+#reader-view {
+    max-width: 800px;
+    margin: 0 auto;
+    padding: 20px;
+    font-family: Arial, sans-serif;
+    line-height: 1.6;
+}
+
+
+
+
+/* Comments Section */
+.comments {
+    margin-top: 30px;
+    border-top: 1px solid #ccc;
+    padding-top: 20px;
+}
+.comments h3 {
+    font-size: 1.5rem;
+    margin-bottom: 15px;
+    text-align: left;
+    color: #333;
+}
+#comments-list {
+    list-style-type: none;
+    padding: 0;
+    margin-bottom: 20px;
+}
+#comments-list li {
+    padding: 10px;
+    border-bottom: 1px solid #ddd;
+    font-size: 1rem;
+    color: #444;
+}
+#comments-list li:last-child {
+    border-bottom: none;
+}
+#add-comment-button {
+    background-color: #007bff;
+    color: white;
+    border: none;
+    padding: 10px 20px;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 1rem;
+}
+#add-comment-button:hover {
+    background-color: #0056b3;
+}
+
+
+#author-controls {
+    width: 100%;
+    margin-top: 30px;
+    text-align: center;
+    display: flex;
+    justify-content: center;
+    gap: 10px; /* Space between buttons */
+}
+
+#author-controls button {
+    padding: 10px 15px;
+    background-color: #007bff;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    font-size: 16px;
+    cursor: pointer;
+}
+
+#author-controls button:hover {
+    background-color: #0056b3;
+}

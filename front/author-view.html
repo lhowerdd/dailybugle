@@ -1,0 +1,43 @@
+<div id="article-container">
+    <!-- Article Title -->
+    <div id="article-title">
+        <h1>Article Title Goes Here</h1>
+    </div>
+
+    <!-- Article Body -->
+    <div id="article-body">
+        <p>
+            This is the main body of the article. The content will be dynamically loaded.
+        </p>
+    </div>
+
+    <!-- Article Image -->
+    <div id="article-image">
+        <img id='actual-img' src="placeholder.jpg" alt="Article Image">
+    </div>
+
+    <!-- Article Meta Information -->
+    <div id="article-meta">
+       <p id="categories"></p>
+       <p id="date-created"></p>
+       <p id="last-edit"></p>
+    </div>
+
+    <!-- Comments Section -->
+    <div class="comments">
+        <h3>Comments</h3>
+        <ul id="comments-list"></ul>
+        <div id="new-commen-container">
+            <label for="new-comment">Comment:</label>
+            <input id="new-comment" type="text" name="new-comment"></input>
+        </div>
+        <button id="add-comment-button" onclick="addComment()">Add Comment</button>
+    </div>
+
+    <!-- Author Controls Section -->
+    <div id="author-controls">
+        <button id="create-article-button" onclick="getEditArticleView()">Create New Article</button>
+        <button id="edit-article-button" onclick="editCurrentArticle()">Edit Current Article</button>
+        <button id="next-article-button" onclick="loadNextArticle()">Next Article</button>
+    </div>
+</div>

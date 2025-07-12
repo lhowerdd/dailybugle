@@ -1,0 +1,43 @@
+<div id="article-container">
+    <!-- Title Section -->
+    <div id="article-title" class="title">
+        <h1>Article Title</h1>
+    </div>
+
+    <!-- Article Body Section -->
+    <div id="article-body" class="body">
+        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Pellentesque vel...</p>
+    </div>
+
+    <!-- Article Image Section -->
+    <div id="article-image" class="image">
+        <img id="actual-img" src="placeholder.jpg" alt="Article Image">
+    </div>
+
+    <!-- Article Metadata -->
+    <div id="article-meta" class="metadata">
+        <p id="categories"></p>
+        <p id="date-created"></p>
+        <p id="last-edit"></p>
+    </div>
+
+    <div id="advertisement" onclick="createAdEvent()">
+        <p id="ad-content"> Advertisement Space </p>
+    </div>
+
+    <!-- Comments Section -->
+    <div id="comments-section" class="comments">
+        <h3>Comments</h3>
+        <ul id="comments-list"></ul>
+        <div id="new-comment-container">
+            <label for="new-comment">Comment:</label>
+            <input id='new-comment' type="text" name="new-comment"></input>
+        </div>
+        <button id="add-comment-button" onclick="addComment()">Add a Comment</button>
+    </div>
+
+    <div id="author-controls">
+        <button id="next-article-button" onclick="loadNextArticle()">Next Article</button>
+    </div>
+
+</div>
